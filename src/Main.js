@@ -76,7 +76,9 @@ class Main extends Component {
     return (
     <main>
       <MainForm features={features}/>
-      <MainSummary />
+      <MainSummary 
+        summary={summary}
+        total={total}/>
     </main>
     )
   }  
