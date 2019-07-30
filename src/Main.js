@@ -66,7 +66,7 @@ class Main extends Component {
     
     return (
     <main>
-      <MainForm features={this.props.features}/>
+      <MainForm features={features}/>
       <MainSummary />
     </main>
     )
