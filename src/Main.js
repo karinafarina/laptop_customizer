@@ -27,6 +27,15 @@ class Main extends Component {
       }
     }
   }
+  
+  updateFeature(feature, newValue) {
+    const selected = Object.assign({}, this.state.selected);
+    selected[feature] = newValue;
+    this.setState({
+      selected
+    });
+  }
+  
   render() {
     const features = Object.keys(this.props.features)
       .map(key => {
